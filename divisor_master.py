@@ -29,12 +29,10 @@ print (get_ls(16))
 #3) выводит самый большой простой делитель числа
 
 def issimple(a):
-    r=math.ceil(math.sqrt(a))
-    lst=[]
-    for i in range(3,r):
-        if a%i==0:
-            if issimple(i)==[]:
-                lst.append(i)
-    return lst
-r=issimple(48)
-print(max(r))
+    prime_num = get_ls(a)
+    max_num = 0
+    for i in prime_num:
+        if i > max_num:
+            max_num = i
+    return (max_num)
+print(issimple(48))
