@@ -1,0 +1,1 @@
+{"mark": "Volvo", "fuel_rate": 15.2, "amount": 2500000.0}
